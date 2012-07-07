@@ -8,6 +8,7 @@ sys.path.append(os.path.join(FILE_DIR,"..",".."))
 from pyircclient.clients import StandartioBotLauncher
 
 
-launcher = StandartioBotLauncher()
+# exemple de changement des paramètres par default du launcher
+launcher = StandartioBotLauncher(exec_name="./test.py", exec_params=[])
 launcher.run()
 
