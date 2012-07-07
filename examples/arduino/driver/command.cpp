@@ -1,17 +1,17 @@
 #include "command.h"
 #include "led.h"
 
-/* Analyse le message et effectue les actions associees
- * 	<> id : l'identifiant associe au message
- * 	<> header : le type de message (en-tete)
- * 	<> args : le tableau d'entier contenant les arguments
- * */
 
 
-// from, id_cmd, *args, sizeArgs
-void cmd(int id, int header, int *args, int size){
-    /* On analyse le message en fonction de son type */
-    switch(header)
+/**
+ * Analyse du message et lancement de la fonction associée à la commande
+ * @param id id du message
+ * @param id_cmd id de la commande
+ * @param args tableau d'arguments
+ * @param size nombre d'arguments
+ */
+void cmd(int id, int id_cmd, int *args, int size){
+    switch(id_cmd)
     {
 		case Q_ID:
 		{
