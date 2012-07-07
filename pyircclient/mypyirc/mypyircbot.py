@@ -12,7 +12,7 @@ import time
 import types
 import traceback
 
-from ..py3irc import ircbot,irclib
+from ..irclib import ircbot,irclib
 
 from .ircdefine import *
 from .ircutils import *

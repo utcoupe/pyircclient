@@ -6,6 +6,7 @@
 SEP					= " "
 PREFIX_CMD			= "."
 
+CANAL_ERRORS		= "#errors"
 
 """
 1 - Black
