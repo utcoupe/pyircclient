@@ -119,7 +119,7 @@ class MyPyIrcBot(ircbot.SingleServerIRCBot):
 
 	Hériter de Executer: #see mypyircbot.Executer
 	"""
-	def __init__(self, server_ip, server_port, nickname, channels):
+	def __init__(self, *, server_ip, server_port, nickname, channels):
 		self.serv = None
 		self.nickname = nickname
 		self.canaux = list( map(canal_ircnormalize, [CANAL_ERRORS]+list(channels)) )

@@ -1,1 +1,5 @@
 *__pycache__*
+build/
+*.hex
+*.elf
+.sconsign.dblite

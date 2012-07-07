@@ -18,8 +18,8 @@ class BridgeBot(MyPyIrcBot):
 	et un autre protocole plus bas niveau. Il se charge de transformer
 	les commandes de l'un vers l'autre.
 	"""
-	def __init__(self, server_ip, server_port, nickname, channel, protocol_file, protocol_prefixe):
-		MyPyIrcBot.__init__(self, server_ip, server_port, nickname, [channel])
+	def __init__(self, *, server_ip, server_port, nickname, channel, protocol_file, protocol_prefixe):
+		MyPyIrcBot.__init__(self, server_ip=server_ip, server_port=server_port, nickname=nickname, channels=[channel])
 
 		self.channel = canal_ircnormalize(channel)
 
